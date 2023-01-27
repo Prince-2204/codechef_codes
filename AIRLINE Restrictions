@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int testcase ;
+	cin >> testcase ;
+	while(testcase--)
+	{
+	    int bag1 , bag2 , bag3 , checkin , carried ;
+	    cin >> bag1 >> bag2 >> bag3 >> checkin >> carried ;
+	    if(((checkin >= bag1+ bag2 && bag3<= carried) || (checkin >= bag2 + bag3 && bag1<= carried) || (checkin >= bag1 + bag3 && bag2 <= carried)))
+	    {
+	        cout<<"YES"<<endl;
+	    }else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
