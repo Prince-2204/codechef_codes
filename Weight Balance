@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int testcase ;
+	cin >> testcase ;
+	while(testcase--)
+	{
+	    int w1 , w2 , x1 , x2 , w , diff , min , max ;
+	    cin >> w1 >> w2 >> x1 >> x2 >> w  ;
+	    diff = w2 - w1 ;
+	    min = w*x1 ;
+	    max = w*x2 ;
+	    if((diff >= min) && (max >= diff))  
+	    {
+	        cout<< 1 <<endl;
+	    }else
+	    {
+	        cout<< 0 <<endl;
+	    }
+	}
+	return 0;
+}
