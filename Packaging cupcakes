@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+using ll = long long ;
+
+
+int main() {
+    ll t ;
+    cin >> t ;
+    while(t--)
+    {
+        ll n ;
+        cin >> n ;
+        ll x , y ;
+        if( n % 2 == 0)
+        {
+            x = (n - 2 ) / 2 ;
+            cout<< x + 2<<'\n';
+        }else
+        {
+            y = ( n - 1) / 2 ;
+            cout<< y + 1 <<'\n';
+        }
+    }
+    
+	
+	return 0;
+}
